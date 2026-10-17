@@ -1,0 +1,21 @@
+.admin-order-item{display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px;align-items:start;}
+.admin-order-item-copy{min-width:0;overflow-wrap:anywhere;}
+.admin-order-image-open,.admin-order-image-unavailable{width:88px;height:88px;border:1px solid var(--ink);background:var(--white);color:var(--ink);padding:0;}
+.admin-order-image-open{position:relative;display:block;cursor:zoom-in;}
+.admin-order-image-open>img{width:100%;height:100%;object-fit:contain;}
+.admin-order-image-hint{position:absolute;inset-inline-end:3px;bottom:3px;display:grid;place-items:center;width:23px;height:23px;background:var(--white);border:1px solid var(--ink);}
+.admin-order-image-unavailable{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:5px;text-align:center;font-size:11px;line-height:1.6;}
+.admin-order-image-dialog{box-sizing:border-box;width:min(900px,calc(100vw - 32px));max-width:none;max-height:calc(100dvh - 32px);padding:18px;overflow:auto;border:1px solid var(--ink);border-radius:8px;background:var(--white);color:var(--ink);}
+.admin-order-image-dialog::backdrop{background:rgba(44,44,44,.85);}
+.admin-order-image-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px;}
+.admin-order-image-heading>div{min-width:0;overflow-wrap:anywhere;}
+.admin-order-image-heading h3{font-size:18px;font-weight:600;}
+.admin-order-image-heading p{font-size:14px;margin-top:5px;}
+.admin-order-image-heading>button{display:grid;place-items:center;flex-shrink:0;min-width:44px;min-height:44px;padding:8px;border:1px solid var(--ink);background:var(--white);}
+.admin-order-image-full{display:block;max-width:100%;max-height:72dvh;width:auto;height:auto;object-fit:contain;margin-inline:auto;}
+@media(max-width:600px){
+ .admin-order-item{grid-template-columns:72px minmax(0,1fr);gap:12px;}
+ .admin-order-image-open,.admin-order-image-unavailable{width:72px;height:72px;}
+ .admin-order-image-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px);padding:12px;}
+ .admin-order-image-heading{gap:10px;}
+}

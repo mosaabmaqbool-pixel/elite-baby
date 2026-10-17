@@ -1,0 +1,1 @@
+ALTER TABLE `admin_sessions` ADD `remember` integer DEFAULT 0 NOT NULL;

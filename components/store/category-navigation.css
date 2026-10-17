@@ -1,0 +1,5 @@
+@media(max-width:900px){
+ .header-mobile-links .header-category-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:44px;padding:10px 0;border:0;border-bottom:1px solid var(--beige);text-align:start;color:inherit;}
+ .header-mobile-links .header-subcategories{display:grid;padding-inline-start:18px;border-inline-start:2px solid var(--beige);margin-block:8px;}
+ .header-mobile-links .header-subcategories a{min-height:44px;}
+}

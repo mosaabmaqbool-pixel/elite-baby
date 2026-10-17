@@ -1,0 +1,1 @@
+ALTER TABLE `admin_users` ADD `gender` text DEFAULT 'female' NOT NULL;
