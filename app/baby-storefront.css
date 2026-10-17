@@ -28,3 +28,29 @@
     transform:translateY(0);
   }
 }
+
+/* Mobile hero centering fix: prevent RTL horizontal overflow and keep hero artwork centered */
+@media(max-width:760px){
+  .baby-theme{overflow-x:hidden}
+  .baby-theme .baby-hero{overflow-x:hidden}
+  .baby-theme .baby-hero-art{
+    width:100%;
+    max-width:100%;
+    margin-inline:auto;
+    justify-self:center;
+    box-sizing:border-box;
+    overflow:hidden;
+  }
+  .baby-theme .baby-hero-logo{
+    display:block;
+    width:90%;
+    max-width:90%;
+    margin-inline:auto;
+    flex:0 0 auto;
+    object-position:center center;
+  }
+  .baby-theme .baby-hero-tag{right:12px}
+  .baby-theme .baby-star-one{right:16px}
+  .baby-theme .baby-star-two{left:16px}
+  .baby-theme .baby-art-caption{left:20px}
+}
