@@ -54,3 +54,23 @@
   .baby-theme .baby-star-two{left:16px}
   .baby-theme .baby-art-caption{left:20px}
 }
+
+/* Samsung/Android mobile rendering fix: avoid GPU blend-mode corruption on images */
+@media(max-width:760px){
+  .baby-theme .baby-hero-logo,
+  .baby-theme .baby-category-art img,
+  .baby-theme .baby-collection img,
+  .baby-theme .modern-footer .baby-brand-logo,
+  .baby-theme .about-logo img{
+    mix-blend-mode:normal !important;
+    opacity:1 !important;
+    backface-visibility:visible;
+    -webkit-backface-visibility:visible;
+  }
+  .baby-theme .baby-hero-art,
+  .baby-theme .baby-category-art,
+  .baby-theme .baby-collection,
+  .baby-theme .about-logo{
+    isolation:isolate;
+  }
+}
