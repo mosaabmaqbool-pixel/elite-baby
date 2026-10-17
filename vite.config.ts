@@ -22,8 +22,8 @@ const localBindingConfig = {
     ? [
         {
           binding: d1,
-          database_name: "site-creator-d1",
-          database_id: SITE_CREATOR_PLACEHOLDER_DATABASE_ID,
+          database_name: "elite-baby-d1",
+          database_id: "c9b8c8b4-098e-41d5-8364-795ed6ba28f9",
         },
       ]
     : [],
@@ -31,7 +31,7 @@ const localBindingConfig = {
     ? [
         {
           binding: r2,
-          bucket_name: "site-creator-r2",
+          bucket_name: "elite-baby-r2",
         },
       ]
     : [],
